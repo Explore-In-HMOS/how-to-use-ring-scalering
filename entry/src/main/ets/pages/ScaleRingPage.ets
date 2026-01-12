@@ -5,7 +5,7 @@ import { ProgressViewModel } from '../viewmodel/ProgressViewModel';
 export struct ScaleRingPage {
   @State count: number = 300000
   textTimerController: TextTimerController = new TextTimerController()
-  @State format: string = 'mm:ss'
+  format: string = 'mm:ss'
   @State currCount : number = 0
   progressVm : ProgressViewModel = new ProgressViewModel()
 
@@ -34,7 +34,6 @@ export struct ScaleRingPage {
         .fontColor(Color.White)
         .fontSize(48)
         .onTimer((utc: number, elapsedTime: number) => {
-          console.info('textTimer notCountDown utc is: ' + utc + ', elapsedTime: ' + elapsedTime)
           this.currCount = elapsedTime
         })
         .onAppear(()=>{

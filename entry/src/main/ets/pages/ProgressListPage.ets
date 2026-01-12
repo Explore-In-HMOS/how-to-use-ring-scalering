@@ -28,7 +28,7 @@ export struct ProgressListPage {
       ArcList({
         initialIndex: 0, header: this.header
       }) {
-        ForEach(this.progressTypes, (item: string, index) => {
+        ForEach(this.progressTypes, (item: string, index: number) => {
           ArcListItem() {
             Row({space: 20}) {
               Text(item)
@@ -40,7 +40,7 @@ export struct ProgressListPage {
               left: 26,
               bottom: 12,
               top: 12,
-              right: 26,
+              right: 26
             })
             .backgroundColor('#7ab06b3e')
             .width('100%')
@@ -58,7 +58,7 @@ export struct ProgressListPage {
           })
           .width('90%')
           .margin({ bottom: 10 })
-        }, (item: string) => item);
+        }, (item: string, index: number) => item);
       }
       .scrollBar(BarState.Off)
       .zIndex(2)

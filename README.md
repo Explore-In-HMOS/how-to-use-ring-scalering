@@ -1,6 +1,6 @@
 > **Note:** To access all shared projects, get information about environment setup, and view other guides, please visit [Explore-In-HMOS-Wearable Index](https://github.com/Explore-In-HMOS-Wearable/hmos-index).
 
-# How to Use Ring and ScaleRing Progress Components
+# How to Use Ring and ScaleRing
 
 This is an HarmonyOS Next wearable app that demonstrates how to use a countdown timer together with progress components.
 The project shows how to build and display both ScaleRingProgress and RingProgress in ArkTS using ArkUI.
@@ -56,6 +56,6 @@ entry/src/main/ets/
 
 # License
 
-**WearTimerBar** is distributed under the terms of the MIT License.
+**How to Use Ring and ScaleRing** is distributed under the terms of the MIT License.
 
 See the [LICENSE](/LICENSE) for more information.

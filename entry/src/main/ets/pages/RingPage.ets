@@ -7,9 +7,9 @@ export struct RingPage {
     { color: Color.Orange, offset: 1.0 }])
   @State count: number = 300000
   textTimerController: TextTimerController = new TextTimerController()
-  @State format: string = 'mm:ss'
-  @State currCount : number = 0
-  progressVm : ProgressViewModel = new ProgressViewModel()
+  format: string = 'mm:ss'
+  @State currCount: number = 0
+  progressVm: ProgressViewModel = new ProgressViewModel()
 
   onBackPress(): boolean | void {
     this.textTimerController.reset()
@@ -36,14 +36,13 @@ export struct RingPage {
         .fontColor(Color.White)
         .fontSize(48)
         .onTimer((utc: number, elapsedTime: number) => {
-          console.info('textTimer notCountDown utc is: ' + utc + ', elapsedTime: ' + elapsedTime)
           this.currCount = elapsedTime
         })
-        .onAppear(()=>{
+        .onAppear(() => {
           this.textTimerController.start()
         })
         .fontWeight(FontWeight.Bolder)
-        .offset({x: 0, y: -60})
+        .offset({ x: 0, y: -60 })
         .zIndex(3)
 
       ArcButton({
@@ -56,7 +55,7 @@ export struct RingPage {
           }
         })
       })
-        .offset({x: 0, y: 68})
+        .offset({ x: 0, y: 68 })
         .zIndex(3)
     }
   }
