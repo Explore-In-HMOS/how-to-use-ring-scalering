@@ -2,7 +2,7 @@
 
 # How to Use Ring and ScaleRing
 
-This is an HarmonyOS Next wearable app that demonstrates how to use a countdown timer together with progress components.
+This is a HarmonyOS wearable app that demonstrates how to use a countdown timer together with progress components.
 The project shows how to build and display both ScaleRingProgress and RingProgress in ArkTS using ArkUI.
 
 # Preview
